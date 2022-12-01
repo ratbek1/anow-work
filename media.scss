@@ -107,6 +107,11 @@
     padding: 5% 0 5% 19%;
   }
 }
+@media screen {
+  #header .header--burger__lineBurger div {
+    display: none;
+  }
+}
 @media (max-width: 1140px) {
   #header .header--burger__lineBurger div {
     display: none;
