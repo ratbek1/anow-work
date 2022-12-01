@@ -1,0 +1,608 @@
+@import "varables";
+@import "reset";
+@import "mixins";
+@import "global";
+#header{
+  .header{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    padding: 20px 0 25px 0;
+#burger{
+  display: none;
+}
+    &--burger{
+      &__lineBurger div{
+        width: 40px;
+        height: 4px;
+        background: #111111;
+        margin: 7px 0 0 300px;
+        border-radius: 10px;
+      }
+      &__lineBurger div{
+        transition: 2s;
+      }
+      #burger:checked~.header--burger__burger-menu{
+        margin-top: 0;
+      }
+      #burger:checked~.header--burger__lineBurger div:nth-child(2){
+        position: absolute;
+        right: 900px;
+        top: 36px;
+        transition: 2s;
+        opacity: 0;
+      }
+      #burger:checked~.header--burger__lineBurger div:nth-child(1){
+        position: absolute;
+        transform: rotate(40deg);
+        z-index: 5;
+        top: 36px;
+        transition: 2s;
+      }
+      #burger:checked~.header--burger__lineBurger div:nth-child(3){
+        position: absolute;
+        transform: rotate(-40deg);
+        z-index: 5;
+        top: 36px;
+        transition: 2s;
+      }
+      &__burger-menu{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        margin-top: -900px;
+        background: rgba(255, 255, 255, 0.85);
+        z-index: 4;
+        min-height: 100vh;
+        transition:2s ;
+        border-bottom-left-radius: 50%;
+        a{
+          font-family: "Poppins", sans-serif;
+          color: #111111;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 20px 0;
+          font-size: 30px;
+          width: 100%;
+        }
+        a:hover{
+          color: red;
+        }
+      }
+    }
+    &--logo{
+      @include logo;
+    }
+    &--navMenu{
+      a:hover{
+        color:#FD8558;
+        transition: 1s;
+      }
+      a{
+        @include menu;
+        margin: 25px;
+      }
+    }
+  }
+}
+#design{
+  background: url("../img/IMAGE.svg")no-repeat center/cover;
+  .design{
+    color: $white;
+    text-align: center;
+    padding: 200px 0 330px 0;
+    &--title{
+      @include title;
+      position: relative;
+      z-index: 2;
+    }
+    &--title2{
+      @include title;
+      position: relative;
+      z-index: 2;
+    }
+    &--btn{
+      color: $white;
+      @include btn;
+      background: #FD8558;
+      padding: 13px 39px;
+      margin: 40px 30px 0 0;
+      position: relative;
+      z-index: 2;
+    }
+    &--btn:hover{
+      transition: 3s;
+      transform: rotate3d(1,50,1,1turn);
+    }
+    &--btn2{
+      padding: 11px 39px;
+      color: $white;
+      @include btn;
+      background: transparent;
+      border: 2px solid #FD8558;
+      position: relative;
+      z-index: 2;
+    }
+    &--btn2:focus{
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    &--img{
+      position: absolute;
+      top: 11.7%;
+      left: 0;
+    }
+    &--pluton{
+      position: absolute;
+      right: 8%;
+      top: 17%;
+    }
+    &--x2{
+      position: absolute;
+      right: 10%;
+    }
+    &--xImg{
+      position: absolute;
+      left: 7%;
+      bottom: -8%;
+    }
+    &--img2{
+      position: absolute;
+      right: 0;
+      bottom: -17.6%;
+    }
+    &--frame{
+      position: absolute;
+      top: 30%;
+      right: 34%;
+    }
+    &--circle{
+      position: absolute;
+      top: 25%;
+      right: 32%;
+    }
+  }
+}
+#Frankie{
+  .Frankie{
+    &--about{
+      margin: 52px 0 0 -60px;
+    }
+    &--blockTitle{
+      @include between;
+      &__Ultimate{
+        @include Ultimate;
+      }
+      &__miniText{
+        font-family: 'Poppins',sans-serif;
+        font-size: 15px;
+        color: #FD8558;
+        margin: 45px 0;
+      }
+      &__Quisque{
+        @include Quisque;
+        margin: 0 0 11px 100px;
+      }
+      &__Maecenas{
+        @include Maecenas;
+        margin-left: 100px;
+      }
+    }
+    &--block{
+      margin-top: 60px;
+      @include between;
+      &__img{
+        position: relative;
+      }
+      div{
+        margin-left: 65px;
+      }
+      &__mission{
+        @include mission;
+      }
+      &__Kao{
+        @include Kao;
+        margin: 93px 0 20px 0;
+      }
+      &__pao{
+        @include pao;
+      }
+    }
+    &--blockBottom{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 195px;
+      &__imgs{
+        color: #111111;
+      }
+      &__lamp{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -35px;
+      }
+      &__digital{
+        @include digital;
+        margin: 20px 0 17px 0;
+      }
+      &__need{
+        @include need;
+        width: 70%;
+        margin-left: 18%;
+      }
+    }
+    &--imgCenter{
+      margin: 5% 0  0 47%;
+    }
+    &--line{
+      position: absolute;
+      right: 5%;
+      margin-top: 7%;
+    }
+    &--line1{
+      position: absolute;
+      left: 5%;
+      margin-top: 7%;
+    }
+  }
+}
+#portfolio{
+  margin-bottom: 200px;
+  .portfolio{
+    margin-top: 180px;
+    &--block{
+      @include between;
+      &__latest{
+        @include latest;
+      }
+      &__look{
+        @include look;
+      }
+      &__btn{
+        background: #FD8558;
+        border: none;
+        padding: 13px 37px;
+        color: $white;
+        margin-bottom: -30px;
+      }
+    }
+    &--works{
+      margin-left: 62%;
+    }
+    &--img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__bgr{
+        position: center;
+      }
+      &__imgs{
+        transition: 2s;
+      }
+    }
+    &--block1{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &__block02{
+        margin-top: 12%;
+        &--illustration{
+          @include line-tex;
+          margin-bottom: -15px;
+        }
+        &--web{
+          @include line-tex;
+          margin-bottom: -15px;
+        }
+        &--development{
+          @include line-tex;
+          margin-bottom: -15px;
+        }
+        &--ninety{
+          @include need;
+          margin-left: 80%;
+        }
+        &--eghty{
+          @include need;
+          margin-left: 72%;
+        }
+        &--ninetyFive{
+          @include need;
+          margin-left: 86%;
+        }
+        &--lineBlock{
+          width: 500px;
+          height: 10px;
+          background: #EEEEEE;
+          margin-bottom: 45px;
+          @keyframes line {
+            from{
+              width: 0;
+            }
+            to{
+              width: 88%;
+            }
+          }
+          &--line{
+            width: 440px;
+            height: 10px;
+            background: linear-gradient(90deg, #FF4803 0%, #FFAE35 59.74%);
+            animation: 3s line linear 1;
+          }
+        }
+        &--line2Block{
+          width: 500px;
+          height: 10px;
+          background: #EEEEEE;
+          margin-bottom: 45px;
+          @keyframes line2 {
+            from{
+              width: 0;
+            }
+            to{
+              width: 80%;
+            }
+          }
+          &--line2{
+            width: 400px;
+            height: 10px;
+            background: linear-gradient(90deg, #FF4803 0%, #FFAE35 59.74%);
+            animation: 3s line2 linear 1;
+          }
+        }
+        &--line3Block{
+          width: 500px;
+          height: 10px;
+          background: #EEEEEE;
+          @keyframes line3 {
+            from{
+              width: 0;
+            }
+            to{
+              width: 92%;
+            }
+          }
+          &--line3{
+            width: 470px;
+            height: 10px;
+            background: linear-gradient(90deg, #FF4803 0%, #FFAE35 59.74%);
+            animation: 3s line3 linear 1;
+          }
+        }
+      }
+      &__skills{
+        @include latest;
+        margin: 156px 0 10px 0;
+      }
+      &__modern{
+        @include modern;
+        margin-bottom: 15px;
+      }
+      &__need{
+        @include menufooter;
+      }
+    }
+  }
+}
+#team{
+  .team{
+    &--logo{
+      @include latest;
+      text-align: center;
+    }
+    &--awesome{
+      @include awesome;
+    }
+    &--block{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      &__img{
+        &--imgs{
+          position: relative;
+          z-index: -1;
+        }
+        &--text{
+          @include text;
+          margin-top: -200px;
+        }
+        &--text2{
+          @include text2;
+        }
+      }
+    }
+    &--block2{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 180px;
+      &__img{
+        &--imgs{
+          position: relative;
+          z-index: -1;
+        }
+        &--text{
+          @include text;
+          margin-top: -200px;
+        }
+        &--text2{
+          @include text2;
+        }
+      }
+    }
+    &--btn{
+      @include btn;
+      color: $white;
+      margin: 18% 0 8% 45%;
+      background: #FD8558;
+      padding: 13px 37px;
+    }
+  }
+}
+#CEO{
+  background: #3A0F73;
+  .CEO{
+    &--img{
+      margin: 70px 72px 70px;
+    }
+    &--title{
+      @include small;
+      margin-bottom: 64px;
+      margin-left: 20%;
+      width: 60%;
+    }
+    &--blockBottom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 150px;
+      &__img{
+        position: relative;
+      }
+      &__text{
+        @include text2;
+        text-align: left;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+#daily{
+  .daily{
+    &--log{
+      @include latest;
+      text-align: center;
+      margin: 112px 0 45px 0;
+    }
+    &--logo{
+      @include awesome;
+      text-transform: none;
+    }
+    &--block{
+      margin-top: 26px;
+      @include between;
+      &__imgs{
+        position: relative;
+      }
+      &__title{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &--lifestyle{
+          @include lifestyle;
+          margin: 28px 0 20px 0;
+        }
+        &--img{
+          margin: 28px 0 20px 0;
+        }
+        &--marh{
+          @include marh;
+          margin: 28px 0 20px 0;
+        }
+      }
+      &__text{
+        @include text-from;
+        margin-bottom: 36px;
+      }
+      &__more{
+        @include lifestyle;
+      }
+    }
+    &--block2{
+      margin-top: 115px;
+      @include between;
+      &__address{
+        @include marh;
+      }
+      &__information{
+        margin-top: 45px;
+        @include marh;
+      }
+      &__tottenham{
+        @include text-from;
+      }
+      &__tottenham{
+        @include text-from;
+      }
+      &__nameInput{
+        padding: 18px 160px 19px 40px;
+        outline: none;
+        margin-top: 90px;
+        border: 1px solid #EEEEEE;
+      }
+      &__emailInput{
+        padding: 18px 160px 19px 40px;
+        outline: none;
+        margin: 0 0 30px 30px;
+        border: 1px solid #EEEEEE;
+      }
+      &__Input{
+        padding: 20px 560px 67px 40px;
+        outline: none;
+        margin-bottom: 65px;
+        border: 1px solid #EEEEEE;
+      }
+      &__btn{
+        @include btn;
+        background: #FD8558;
+        color: $white;
+        padding: 18px 38px;
+        border: none;
+      }
+   }
+  }
+}
+#anow{
+  background: #111111;
+  margin-top: 120px;
+  .anow{
+    color: $white;
+    &--block{
+      display: flex;
+      gap: 15%;
+      &__mini-block{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &--contac{
+          @include need;
+        }
+        &--contac2{
+          @include text2;
+          color: rgba(255, 255, 255, 0.6);
+        }
+        &--contac3{
+          @include text2;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+      &__anow{
+        @include anow;
+        margin: 93px 0 27px 0;
+      }
+      &__title{
+        @include home;
+        margin: 109px 0 19px 0;
+      }
+      &__menu{
+        @include menufooter;
+        margin-bottom: 10px;
+      }
+    }
+    &--text{
+      gap: 5px;
+      display: flex;
+      align-items: center;
+      padding: 5% 0 5% 30%;
+      &__all{
+        @include need;
+      }
+      &__digital{
+        @include digital;
+      }
+    }
+  }
+}

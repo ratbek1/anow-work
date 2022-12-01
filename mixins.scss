@@ -1,0 +1,197 @@
+@mixin logo{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1.1px;
+  text-transform: lowercase;
+  color: $cr;
+}
+@mixin menu{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: $cr;
+}
+@mixin title{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+}
+@mixin btn{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+}
+@mixin between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin Ultimate{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #333333;
+  width: 105%;
+}
+@mixin Quisque{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $cr;
+  width: 70%;
+}
+@mixin Maecenas{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #999999;
+  width: 65%;
+}
+@mixin mission{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  color: $cr;
+  width: 55%;
+}
+@mixin Kao{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: $cr;
+}
+@mixin pao{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  color: #CACACA;
+}
+@mixin digital{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+}
+@mixin need{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #999999;
+}
+@mixin latest{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FD8558;
+}
+@mixin look{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #333333;
+  width: 60%;
+}
+@mixin awesome{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $cr;
+}
+@mixin text{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+@mixin text2{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #FCFCFC;
+}
+@mixin small{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: $white;
+}
+@mixin lifestyle{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FD8558;
+}
+@mixin marh{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+}
+@mixin text-from{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: $cr;
+}
+@mixin anow{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: $white;
+}
+@mixin home{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+@mixin menufooter{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #BABABA;
+}
+@mixin digital{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+@mixin modern{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: $cr;
+}
+@mixin line-tex{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: $cr;
+}
